@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+::selection {
+    background: rgba(0, 0, 0, .2);
+}
+
+
+
+body {
+    height: 100vh;
+    margin: 0;
+    background: #f9f9f9;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: visible;
+	position: relative;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2em;
+    color: #042C62;
+    pointer-events: none;
+    margin-right: 270px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #042C62;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: #042C62;
+    color: #fff;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text {
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    font-family: 'Lemon/Milk', sans-serif;
+}
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+
+
+.div1, .div2{
+    height: 100vh;
+}
+
+.div1{
+    background-color: whitesmoke;
+    position: relative;
+}
+
+
+.car{
+    width: 30em;
+    height: 29em;
+    background-color: transparent;
+}
+
+.container{
+    scroll-behavior: smooth;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    background-image: url('/fondo.png');
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    margin: 0;
+    margin-right: 0;
+}
+
+.card{
+    margin-bottom: 70px;
+}
+
+.card-title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card-text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: smaller;
+    font-weight: 300;
+    margin-top: 10px;
+}
